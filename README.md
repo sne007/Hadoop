@@ -10,6 +10,10 @@ hadoop fs -get /user/tatavag/nyc.data ~/Hadoop/nyc.csv
 
 hadoop fs -put nyc.csv /user/challasy/nyc.csv (This Exists)
 
+# Map Reduce Command:
+
+hadoop jar /usr/hdp/current/hadoop-mapreduce-client/hadoop-streaming.jar -file /home/challasy/mapper.py -mapper /home/challasy/mapper.py -file /home/challasy/reducer.py -reducer /home/challasy/reducer.py -input /user/challasy/nyc.csv -output /user/challasy/mysummary
+
 # To give persmissions:
 
 chmod +x mapper.py && chmod +x reducer.py
