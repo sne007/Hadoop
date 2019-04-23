@@ -8,7 +8,7 @@ git clone https://github.com/laxmipolam/Hadoop.git
 hadoop fs -get /user/tatavag/nyc.data /home/nyc
 hadoop fs -get /user/tatavag/nyc.data ~/Hadoop/nyc.csv
 
-hadoop fs -put nyc.csv /user/polamli/nyc.csv ( Already Exists)
+hadoop fs -put nyc.csv /user/challasy/nyc.csv ( Already Exists)
 
 # To give persmissions:
 
@@ -18,12 +18,12 @@ chmod +x mapper.py && chmod +x reducer.py
 
 (outputname can be replaced with any other name)
 
-hadoop jar /usr/hdp/current/hadoop-mapreduce-client/hadoop-streaming.jar -file ~/mapper.py -mapper ~/mapper.py -file ~/reducer.py -reducer ~/reducer.py -input /user/polamli/nyc.csv -output /user/polamli/outputname
+hadoop jar /usr/hdp/current/hadoop-mapreduce-client/hadoop-streaming.jar -file ~/mapper.py -mapper ~/mapper.py -file ~/reducer.py -reducer ~/reducer.py -input /user/challasy/nyc.csv -output /user/challasy/outputname
 
 # Downloading file from hdfs to local machine:
 
-hadoop fs -get /user/polamli/outputname/part-00000 ~/outputname.txt
+hadoop fs -get /user/challasy/outputname/part-00000 ~/outputname.txt
 
 # To See the output:
 
-hadoop fs -cat /user/polamli/outputname/*
+hadoop fs -cat /user/challasy/outputname/*
