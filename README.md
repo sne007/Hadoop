@@ -2,7 +2,7 @@
 
 # To clone:
 
-git clone https://github.com/laxmipolam/Hadoop.git
+git clone https://github.com/sne007/Hadoop.git
 
 # To get data:
 hadoop fs -get /user/tatavag/nyc.data /home/nyc
