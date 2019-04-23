@@ -8,7 +8,7 @@ git clone https://github.com/laxmipolam/Hadoop.git
 hadoop fs -get /user/tatavag/nyc.data /home/nyc
 hadoop fs -get /user/tatavag/nyc.data ~/Hadoop/nyc.csv
 
-hadoop fs -put nyc.csv /user/challasy/nyc.csv ( Already Exists)
+hadoop fs -put nyc.csv /user/challasy/nyc.csv (This Exists)
 
 # To give persmissions:
 
